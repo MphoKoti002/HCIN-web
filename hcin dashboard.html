@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | StudySync Hub</title>
+  <link rel="stylesheet" href="dashboard.css"/>
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-title">📘 StudySync</div>
+      <ul>
+        <li><a href="#">📚 Study Groups</a></li>
+        <li><a href="#">📅 Timetable</a></li>
+        <li><a href="#">📝 Notes</a></li>
+        <li><a href="#">📇 Flashcards</a></li>
+        <li><a href="#">😊 Mood Tracker</a></li>
+        <li><a href="#">⚙️ Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="dashboard-header">
+        <div class="user-info">
+          <img src="https://i.imgur.com/0y0y0y0.png" alt="User Avatar" class="avatar"/>
+          <div>
+            <h2>Hello, Mpho 👋</h2>
+            <p>You're on a 4-day streak 🔥 | Mood: 😊</p>
+          </div>
+        </div>
+        <div class="quote-box">
+          “Discipline is choosing between what you want now and what you want most.”  
+        </div>
+      </header>
+
+      <!-- Quick Actions -->
+      <div class="quick-actions">
+        <button>Create Flashcards</button>
+        <button>Add Task</button>
+        <button>Upload Notes</button>
+      </div>
+
+      <!-- Widgets Section -->
+      <section class="widgets">
+        <div class="widget timetable">
+          <h3>Today's Timetable</h3>
+          <ul>
+            <li>09:00 - 10:00 | Maths Revision</li>
+            <li>11:00 - 12:00 | History Group Study</li>
+            <li>14:00 - 15:00 | Flashcard Practice</li>
+          </ul>
+        </div>
+
+        <div class="widget todo">
+          <h3>To-Do List</h3>
+          <ul>
+            <li><input type="checkbox" /> Finish science summary</li>
+            <li><input type="checkbox" /> Upload group notes</li>
+            <li><input type="checkbox" /> Review flashcards</li>
+          </ul>
+        </div>
+
+        <div class="widget progress">
+          <h3>Weekly Progress</h3>
+          <p>You're 60% through your weekly goals!</p>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 60%;"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
