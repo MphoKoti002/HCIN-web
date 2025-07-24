@@ -91,11 +91,13 @@ body {
 }
 
 /* Feature Box Enhancements */
-.features .feature-box h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-}
-
-.features .feature-box p {
-  font-size: 1rem;
+.features-box {
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  text-align: left;
+  line-height: 1.7;
 }
