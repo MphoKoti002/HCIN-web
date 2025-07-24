@@ -36,13 +36,19 @@
         </div>
       </header>
 
-      <!-- Quick Actions -->
-      <div class="quick-actions">
-        <button>Create Flashcards</button>
-        <button>Add Task</button>
-        <button>Upload Notes</button>
-      </div>
+     <!-- Quick Actions -->
+<div class="quick-actions">
+  <button onclick="createFlashcards()">Create Flashcards</button>
+  <button onclick="toggleTaskInput()">Add Task</button>
+  <button>Upload Notes</button>
+</div>
 
+      <!-- Task Input Field (hidden by default) -->
+<div id="task-input-container" style="display: none; margin-bottom: 1rem;">
+  <input type="text" id="new-task" placeholder="Enter your task..." />
+  <button onclick="addTask()">Add</button>
+</div>
+      
       <!-- Widgets Section -->
       <section class="widgets">
         <div class="widget timetable">
@@ -54,14 +60,14 @@
           </ul>
         </div>
 
-        <div class="widget todo">
-          <h3>To-Do List</h3>
-          <ul>
-            <li><input type="checkbox" /> Finish science summary</li>
-            <li><input type="checkbox" /> Upload group notes</li>
-            <li><input type="checkbox" /> Review flashcards</li>
-          </ul>
-        </div>
+         <div class="widget todo">
+    <h3>To-Do List</h3>
+    <ul id="todo-list">
+      <li><input type="checkbox" /> Finish science summary</li>
+      <li><input type="checkbox" /> Upload group notes</li>
+      <li><input type="checkbox" /> Review flashcards</li>
+    </ul>
+  </div>
 
         <div class="widget progress">
           <h3>Weekly Progress</h3>
@@ -73,5 +79,29 @@
       </section>
     </main>
   </div>
+  <script>
+  function toggleTaskInput() {
+    const inputContainer = document.getElementById("task-input-container");
+    inputContainer.style.display =
+      inputContainer.style.display === "none" ? "block" : "none";
+  }
+
+  function addTask() {
+    const taskText = document.getElementById("new-task").value.trim();
+    const todoList = document.getElementById("todo-list");
+
+    if (taskText !== "") {
+      const newItem = document.createElement("li");
+      newItem.innerHTML = `<input type="checkbox" /> ${taskText}`;
+      todoList.appendChild(newItem);
+      document.getElementById("new-task").value = ""; // Clear input
+    }
+  }
+
+  function createFlashcards() {
+    alert("Flashcard creation coming soon!");
+  }
+</script>
+
 </body>
 </html>
