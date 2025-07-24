@@ -22,6 +22,28 @@ body {
   text-align: center;
   margin-bottom: 2rem;
 }
+#task-input-container input {
+  padding: 0.5rem;
+  width: 60%;
+  max-width: 300px;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#task-input-container button {
+  padding: 0.5rem 1rem;
+  background-color: #2ecc71;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#task-input-container button:hover {
+  background-color: #27ae60;
+}
+
 
 .sidebar ul {
   list-style: none;
