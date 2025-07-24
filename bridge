@@ -1,0 +1,31 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Dashboard</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Dashboard</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#">Profile</a>
+      <a href="#">Settings</a>
+      <a href="#" class="btn">Logout</a>
+    </nav>
+  </header>
+
+  <main class="dashboard-content">
+    <h1>Welcome back, Mpho!</h1>
+    <p>Here's what's happening today...</p>
+    <!-- You can add widgets, timetables, group links, etc. here -->
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 StudySync Hub | Dashboard</p>
+  </footer>
+</body>
+</html>
